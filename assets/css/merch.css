@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: relative;
+  margin: 1.5em 5em 1.5em 5em;
+  font-family: "Playfair Display";
+}
+
+header nav a:hover {
+  color: #B4975A;
+}
+
+#merch-btn a{
+  background-color: #B4975A !important;
+  font-weight: 500;
+}
+
+header #logo-btn:hover {
+  content: url("../images/logo-gold.png");
+}
+
+.container {
+  display: grid;
+  grid-gap: .8em;
+  padding-top: 1em;
+}
+
+.container div {
+  display: block;
+  width: 90%;
+  height: 300px;
+  background-color: #F8F8F8;
+  margin: 1em;
+}
+
+.container a {
+  font-size: 2em;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  background-color: #F8F8F8;
+  height: 300px;
+  padding: 1em;
+}
+
+.container img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.container span {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container p {
+  font-size: .7em;
+}
+
+.container a:hover img {
+ display: none;
+}
+
+.container a:hover span {
+ display: block;
+}
+
+.no-reveal {
+  cursor: default;
+}
+
+@media  (min-width: 990px) {
+  .container a:nth-child(1){ grid-area: 1/1; }
+  .container a:nth-child(2){ grid-area: 1/2; }
+  .container a:nth-child(3){ grid-area: 1/3; }
+  .container a:nth-child(4){ grid-area: 2/1; }
+  .container a:nth-child(5){ grid-area: 2/2/2/4; }
+}
+
+@media  (min-width: 2500px) {
+  .container a { height: 500px; }
+  main { font-size: 1.8em;}
+}
+
+@media  (max-width: 2500px) {
+  .container a { height: 400px; }
+  main { font-size: 1.5em;}
+}
+
+@media  (max-width: 2000px) {
+  .container a { height: 300px; }
+  main { font-size: 1.2em;}
+}
+
+@media  (max-width: 1500px) {
+  .container a { height: 250px; }
+  main { font-size: 1em;}
+}
+
+@media  (max-width: 990px) {
+  .container a:nth-child(1){ grid-area: 1/1; }
+  .container a:nth-child(2){ grid-area: 1/2; }
+  .container a:nth-child(3){ grid-area: 2/1; }
+  .container a:nth-child(4){ grid-area: 2/2; }
+  .container a:nth-child(5){ grid-area: 3/1/3/3; }
+  .container a { height: 200px; }
+  main { font-size: .9em;}
+}
+
+@media  (max-width: 720px) {
+  .container a:nth-child(1){ grid-area: 1/1; }
+  .container a:nth-child(2){ grid-area: 2/1; }
+  .container a:nth-child(3){ grid-area: 3/1; }
+  .container a:nth-child(4){ grid-area: 4/1; }
+  .container a:nth-child(5){ grid-area: 5/1; }
+}
+
+@media  (max-width: 500px) {
+  main {
+    margin: 1.5em 2em 1.5em 2em;
+  }
+  main { font-size: .8em;}
+}

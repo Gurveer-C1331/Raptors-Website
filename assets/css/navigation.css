@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: "Roboto";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 2em 0 2em;
+  position: sticky;
+  background-color: #FFF;
+  z-index: 10;
+}
+
+.logo-container {
+  display: flex;
+}
+
+#logo-text {
+  font-weight: 800;
+  font-size: 1.2em;
+  margin-left: .5em;
+}
+
+#logo-btn {
+  width: 43px;
+}
+
+#logo-btn:hover {
+  content: url("../images/logo-red.png");
+}
+
+#menu-btn {
+  display: none;
+  padding-right: 2em;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-left: 1.5em;
+  padding: .8em 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #000;
+  font-size: .95em;
+}
+
+nav a:hover {
+  color: #CE1141;
+}
+
+.triangle {
+  display: none;
+  position: absolute;
+  width: 22px;
+  top: -16%;
+}
+
+#management-btn .triangle {
+  top: -11%;
+}
+@keyframes d {
+  from {display: none;}
+  to {display: grid;}
+}
+
+.dropdown {
+  position: absolute;
+  display: none;
+  background-color: #F8F8F8;
+  padding: .5em 1em;
+  margin-top: .75em;
+}
+
+.dropdown a {
+  padding: .3em 0;
+}
+
+#merch-btn {
+  padding-right: 0;
+}
+
+#merch-btn a{
+  display: block;
+  margin-top: -0.5em;
+  padding: 0.5em 0.8em;
+  border-radius: 12px;
+  background-color: #000;
+  color: #FFF;
+}
+
+#merch-btn a:hover {
+  background-color: #CE1141;
+}
+
+@media (min-width: 2250px) {
+  header {
+    font-size: 1.5em;
+  }
+  #logo-btn {
+    width: 64px;
+  }
+}
+
+@media (max-width: 2250px) {
+  header {
+    font-size: 1.3em;
+  }
+  #logo-btn {
+    width: 57px;
+  }
+}
+
+@media (max-width: 2000px) {
+  header {
+    font-size: 1.2em;
+  }
+  #logo-btn {
+    width: 52px;
+  }
+}
+
+@media (max-width: 1750px) {
+  header {
+    font-size: 1.1em;
+  }
+  #logo-btn {
+    width: 46px;
+  }
+}
+
+@media (max-width: 1550px) {
+  header {
+    font-size: 1em;
+  }
+  #logo-btn {
+    width: 43px;
+  }
+}
+
+@media (max-width: 1250px) {
+  header {
+    font-size: .9em;
+    padding-top: 2.2em;
+  }
+  #logo-btn {
+    width: 36px;
+  }
+}
+
+@media (min-width: 751px) {
+  nav li:hover .dropdown {
+    display: grid;
+  }
+  nav li:hover a{
+    border-bottom: solid #F8F8F8 ;
+  }
+  nav li:hover .dropdown a{
+    border-bottom: none;
+  }
+  #merch-btn:hover a{
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    font-size: .8em;
+    padding-top: 1.8em;
+  }
+  #logo-btn {
+    width: 36px;
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    font-size: .8em;
+    padding-top: 1.8em;
+  }
+
+  #menu-btn {
+    display: block;
+    width: 30px;
+    padding-top: .8em;
+    margin-right: -1.8em;
+    cursor: pointer;
+  }
+
+  .hide-moblie {
+    display: none;
+  }
+  
+  .active {
+    position: absolute;
+    display: block;
+    background: #F2F2F2;
+    width: 22%;
+    right: 0;
+    top: 0;
+    width: 100px;
+    padding: 6.5em 1.8em 1.2em 1.8em;
+    margin-top: -2em;
+    font-size: 1.1em;
+    z-index: -1;
+  }
+
+  li {
+    display: block;
+    float: right;
+    clear: right;
+  }
+
+  #merch-btn {
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  
+  .logo-container {
+    position: relative;
+    left: calc(50% - 18px);
+    z-index: -2;
+  }
+
+  #logo-btn {
+    width: 36px;
+  }
+
+  #logo-text {
+    display: none;
+  }
+}
+
+
