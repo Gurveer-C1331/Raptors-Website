@@ -81,7 +81,7 @@
           <div class="message-container">
     
           <?php
-            $mysqli = new mysqli("localhost", "g3chahal", "Cytyoin/", "g3chahal");
+            $mysqli = new mysqli("localhost", "USERNAME", "PASSWORD", "USERNAME");
 
             if ($mysqli -> connect_errno) {
               echo "Failed connection to: ".$mysqli -> connect_errno;
