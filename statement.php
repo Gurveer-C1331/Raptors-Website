@@ -57,7 +57,7 @@
         <div class="gallery-images" id="gallery">
           <!-- retrieving the image names needed to display on this page -->
           <?php
-            $mysqli = new mysqli("localhost", "g3chahal", "Cytyoin/", "g3chahal");
+            $mysqli = new mysqli("localhost", "USERNAME", "PASSWORD", "USERNAME");
 
             if ($mysqli -> connect_errno) {
               echo "Failed connection to: ".$mysqli -> connect_errno;
