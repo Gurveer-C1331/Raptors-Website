@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/logo-red.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/merch.css">
+  <link rel="stylesheet" href="assets/css/navigation.css">
+  <title>Merch</title>
+</head>
+<body>
+  <!-- webpage's top navigation -->
+  <header>
+    <div class="logo-container">
+      <a href="home.html" ><img src="assets/images/logo-black.png" alt="" id="logo-btn"></a>
+      <strong id="logo-text">TORONTO <br> RAPTORS</strong>
+    </div>
+    <nav>
+      <img src="assets/images/menu.svg" alt="" id="menu-btn">
+      <ul class="hide-moblie">
+        <li id="fanZone-btn"><a href="fanZone-LoginSign.php">FANZONE</a></li>
+        <li id="about-btn">
+          <a href="about.html">ABOUT</a>
+          <div class="dropdown">
+            <img src="assets/images/triangle.svg" alt="" class="triangle">
+            <a href="http://webdev.scs.ryerson.ca/~agsimoes/about-franchise.php">Franchise</a>
+            <a href="http://webdev.scs.ryerson.ca/~agsimoes/about-team.php">Team</a>
+          </div>
+        </li>
+        <li id="stats-btn">
+          <a href="stats.html">STATS</a>
+          <div class="dropdown">
+            <img src="assets/images/triangle.svg" alt="" class="triangle">
+            <a href="season2018_19.php">2018/19</a>
+            <a href="season2019_20.php">2019/20</a>
+          </div>
+        </li>
+        <li id="management-btn">
+          <a href="management.html">MANAGEMENT</a>
+          <div class="dropdown">
+            <img src="assets/images/triangle.svg" alt="" class="triangle">
+            <a href="president.php">President</a>
+            <a href="gmanager.php">General Manager</a>
+            <a href="coach.php">Head Coach</a>
+          </div>
+        </li>
+        <li id="merch-btn"><a href="merch.html">MERCH</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- containing five blocks representing five jerseys -->
+    <!-- each block will act as a large button leading to the jersey pages -->
+    <div class="container">
+      <a href="statement.php">
+        <img src="assets/images/merch/statement-background.png" alt="">
+        <span>Statement</span>
+      </a>
+      <a href="association.php">
+        <img src="assets/images/merch/association-background.jpg" alt="">
+        <span>Association</span>
+      </a>
+      <a href="icon.php">
+        <img src="assets/images/merch/icon-background.png" alt="">
+        <span>Icon</span>
+      </a>
+      <a href="" onclick="return false;" class="no-reveal">
+        <img src="assets/images/merch/no-reveal-background.jpg" alt="">
+        <span>TBA</span>
+      </a>
+      <a href="" onclick="return false;" class="no-reveal">
+        <img src="assets/images/merch/no-reveal-background.jpg" alt="">
+        <span>TBA</span>
+      </a>
+    </div>    
+  </main>
+
+  <script src="navigation.js"></script>
+  <script src="merch.js"></script>
+</body>
+</html>
