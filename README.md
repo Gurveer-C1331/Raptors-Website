@@ -3,6 +3,6 @@ Raptors Website was a team project I did for one of my courses. The purpose of t
 
 Files in the repository reflect my contribution to this project. I was responsible for doing the main home page, the entire merch section, parts of the FanZone section and landing pages for the Franchise, Stats and Management sections. I also created a mockup for the website (screenshots inside Raptors Website Layout folder).
 
-http://webdev.scs.ryerson.ca/~g3chahal/Raptors/home.html
+[Link](http://webdev.scs.ryerson.ca/~g3chahal/Raptors/home.html)
 
 Created: Nov 2020 - Dec 2020
